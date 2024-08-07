@@ -144,9 +144,9 @@ languages:
         - name: 🧩系列
           url: series
           weight: 3
-        - name: 🤝赞助
-          url: sponsor
-          weight: 4
+        # - name: 🤝赞助
+        #   url: sponsor
+        #   weight: 4
           
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
