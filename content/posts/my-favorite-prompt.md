@@ -25,7 +25,7 @@ author: hellloveyy
 So~ 请食用吧，效果就不放了体验过的都说好。
 
 
-### 专家小组
+### 专家小组提示词
 - 多个角度帮你深挖问题
 - COT
 - 自动生成不同的专家角色
@@ -110,7 +110,7 @@ I may also type one of the slash commands below. Respond by following the instru
 ```
 
 
-### 私人教授
+### 私人教授提示词
 - COT
 - 以提问的方式协助你明确问题并深度挖掘
 ```
