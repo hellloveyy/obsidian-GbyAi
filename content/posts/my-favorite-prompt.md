@@ -18,7 +18,6 @@ author: hellloveyy
 ---
 
 
-{{< figure src="/images/my-favorite-prompt-20240814094828852.webp" caption="">}}
 {{< figure src="/images/my-favorite-prompt-20240814094901945.webp" caption="">}}
 ### 前言
 自从各种 LLM 模型出现之后，提示词对于深挖 LLM 能力的一种方式，越来越多的被更多的人接受。各种结构化提示词例如 LangGPT 的推出，是帮助 LLM 能够更聪明执行任务和理解用户诉求的一种方式。
