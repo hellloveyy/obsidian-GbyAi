@@ -79,4 +79,4 @@ author: hellloveyy
 
 - 生成流程图可以用 Mermaid 代码{{< figure src="/images/agent-platform-20240819165154246.webp" caption="">}}
 
-其实我们最终要做的 Agent 就是把脑海里面的内容原封不动搬出来，不是吗？
+> 其实我们最终要做的 Agent 就是把脑海里面的内容原封不动搬出来，不是吗？
