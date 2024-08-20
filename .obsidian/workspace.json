@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/about.md",
+                "file": "content/posts/wang-hui-wen.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 383.5
+    "width": 275.5
   },
   "right": {
     "id": "8dddf73d0921827c",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/about.md",
+                "file": "content/posts/wang-hui-wen.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/about.md",
+                "file": "content/posts/wang-hui-wen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +125,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/about.md"
+                "file": "content/posts/wang-hui-wen.md"
               }
+            }
+          },
+          {
+            "id": "5aa734abe60c08b0",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 425.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -144,51 +152,53 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "copilot:Copilot Chat": false
     }
   },
   "active": "9b32b03d410cf1e9",
   "lastOpenFiles": [
+    "content/posts/my-favorite-prompt.md",
+    "content/posts/agent-platform.md",
+    "content/posts/PH-daily-2024-08-18.md",
+    "content/posts/未命名.md",
+    "static/images/agent-platform-20240816153412887.webp",
+    "static/images/agent-platform-20240819165748644.webp",
+    "static/images/agent-platform-20240819165154246.webp",
+    "static/images/agent-platform-20240819165408971.webp",
+    "static/images/agent-platform-20240819163331370.webp",
+    "static/images/my-favorite-prompt-20240814094901945.webp",
+    "static/images/my-favorite-prompt-20240814094828852.webp",
+    "2024-08-13.md",
+    "static/images/idea-20240813165816226.webp",
+    "archetypes/post.md",
+    "content/posts/medical-beauty-aigc-agent.md",
+    "content/posts/aipm-skills.md",
+    "content/posts/linkedin-agent.md",
+    "content/posts/wang-hui-wen.md",
+    "content/posts/vpn.md",
+    "content/posts/Sora.md",
+    "content/posts/share-rss.md",
+    "content/about.md",
     "static/images/王慧文清华产品课Allen修订版-20210104.pdf",
     "static/images/toc-partner-20240308145423357.webp",
     "static/images/toc-partner-20240308142732164.webp",
-    "static/images/toc-partner-20240308142716841.webp",
-    "static/images/toc-partner-20240308142708466.webp",
-    "static/images/toc-partner-20240308142653848.webp",
-    "static/images/share-rss-20240806105748140.webp",
-    "static/images/share-rss-20240806105603100.webp",
-    "static/images/share-rss-20240806103127096.webp",
-    "static/images/share-rss-20240806103119246.webp",
-    "static/images/medical-beauty-aigc-agent-20240401195237666.webp",
     "static/images/2401.03568-1-30.pdf",
-    "content/posts/wang-hui-wen.md",
     "content/posts/toc-partner.md",
-    "content/posts/share-rss.md",
-    "content/posts/medical-beauty-aigc-agent.md",
     "content/posts/medical-beauty-agent-review.md",
     "content/posts/long-context.md",
     "content/posts/llm-pk-tradition.md",
-    "content/posts/linkedin-agent.md",
     "content/posts/free-gpt.md",
-    "content/posts/aipm-skills.md",
-    "content/posts/Sora.md",
     "content/posts/26-prompt-skills.md",
     "content/posts/2024-01-agent-paper.md",
-    "content/about.md",
-    "archetypes/post.md",
     "archetypes/default.md",
     "AI PM Skills Tree.canvas",
-    "content/posts/vpn.md",
     "未命名.md",
     "static/images/AI人工智能产品经理技能知识工作流程（全面值得收藏）.xmind",
     "未命名.canvas",
     "content/posts/mysterious-art.md",
-    "content/posts/agent-platform.md",
     "content/posts/openai-translator.md",
     "content/posts/Obsidian-blog.md",
-    "content/posts/lixiang-product.md",
-    "content/posts/grap-wechat-group-message.md",
-    "content/posts/wildcard.md",
     "content/posts/未命名",
     "static/images/智能客服落地脑图梳理.xmind",
     "images",

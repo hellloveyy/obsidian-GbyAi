@@ -20,7 +20,6 @@ Cover:
   image: /images/idea-20240813165816226.webp
 author: hellloveyy
 ---
-
 {{< figure src="/images/idea-20240813165816226.webp" caption="">}}
 
 > 对目前市面上构建 agent 的平台和工具的一些思考

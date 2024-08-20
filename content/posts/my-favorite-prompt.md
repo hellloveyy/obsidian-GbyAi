@@ -16,9 +16,8 @@ Cover:
   image: /images/my-favorite-prompt-20240814094828852.webp
 author: hellloveyy
 ---
-
-
 {{< figure src="/images/my-favorite-prompt-20240814094901945.webp" caption="">}}
+
 ### 前言
 自从各种 LLM 模型出现之后，提示词对于深挖 LLM 能力的一种方式，越来越多的被更多的人接受。各种结构化提示词例如 LangGPT 的推出，是帮助 LLM 能够更聪明执行任务和理解用户诉求的一种方式。
 但是结构化提示词对于我们日常使用的场景却是不够友好，日常使用需要的是一种随时可用，能够从我们的只言片语中领会并且协助我们深入的万能提示词。
