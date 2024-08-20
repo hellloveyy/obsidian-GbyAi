@@ -20,7 +20,7 @@ Cover:
   image: /images/idea-20240813165816226.webp
 author: hellloveyy
 ---
-![[idea-20240813165816226.webp]]
+{{< figure src="/images/idea-20240813165816226.webp" caption="">}}
 
 > 对目前市面上构建 agent 的平台和工具的一些思考
 
@@ -58,7 +58,7 @@ author: hellloveyy
 
 年初的某一天，想到“每个人都能自由便捷的构建 agent 才是最好的 agent platform“，在开车突然灵感一飘而过，年龄大了记忆力不好赶紧记下来。
 
-![[agent-platform-20240816153412887.webp]]
+{{< figure src="/images/agent-platform-20240816153412887.webp" caption="">}}
 （...忽略一些杂七杂八的玩意儿）
 
 然后果然还是忘了，前两天看到 Wordware，突然想起来自己还留了一个代办呢😭
@@ -67,7 +67,7 @@ author: hellloveyy
 
 抽时间想了想并且把我当前脑海里面最好的 agent 构建平台是什么样子大概画了一下图。
 
-![[agent-platform-20240819165748644.webp]]
+{{< figure src="/images/agent-platform-20240819165748644.webp" caption="">}}
 
 - 为什么是流程图？
 	- 首先你得清晰的知道自己要的是一个什么流程，才能把这个流程复现出来，即使只是一个粗略的流程图，也可以不断的根据你的思路去细化，把脑海之中要做的 agent 具象化出来。
@@ -76,6 +76,6 @@ author: hellloveyy
 	- 平台前置不同的功能模块作为 tools
 	- 通过 LLM 准确判断涉及的功能模块
 
-- 生成流程图可以用 Mermaid 代码![[agent-platform-20240819165154246.webp]]
+- 生成流程图可以用 Mermaid 代码{{< figure src="/images/agent-platform-20240819165154246.webp" caption="">}}
 
 > 其实我们最终要做的 Agent 就是把脑海里面的内容原封不动搬出来，不是吗？
