@@ -15,6 +15,7 @@ lang: cn
 Cover:
   image: /images/aipm-skills-20240319102243305.webp
 author: hellloveyy
+weight: "2"
 ---
 
 
