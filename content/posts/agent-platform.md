@@ -20,6 +20,7 @@ Cover:
   image: /images/idea-20240813165816226.webp
 author: hellloveyy
 ---
+
 {{< figure src="/images/idea-20240813165816226.webp" caption="">}}
 
 > 对目前市面上构建 agent 的平台和工具的一些思考
@@ -67,7 +68,7 @@ author: hellloveyy
 
 抽时间想了想并且把我当前脑海里面最好的 agent 构建平台是什么样子大概画了一下图。
 
-{{< figure src="/images/agent-platform-20240819165748644.webp" caption="">}}
+{{< figure src="/images/agent-platform-20240820160934001.webp" caption="">}}
 
 - 为什么是流程图？
 	- 首先你得清晰的知道自己要的是一个什么流程，才能把这个流程复现出来，即使只是一个粗略的流程图，也可以不断的根据你的思路去细化，把脑海之中要做的 agent 具象化出来。
