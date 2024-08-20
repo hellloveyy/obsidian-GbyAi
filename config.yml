@@ -144,7 +144,7 @@ languages:
         - name: 🧩系列
           url: series
           weight: 3
-        - name: 🤝Product-Hunt
+        - name: 🤝Product-Hunt 中文版
           url: https://producthunt.gby.ai/
           weight: 4
           
