@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/agent-platform.md",
+                "file": "content/posts/my-favorite-prompt.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/agent-platform.md",
+                "file": "content/posts/my-favorite-prompt.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/agent-platform.md",
+                "file": "content/posts/my-favorite-prompt.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/agent-platform.md"
+                "file": "content/posts/my-favorite-prompt.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "9b32b03d410cf1e9",
   "lastOpenFiles": [
-    "content/posts/PH-daily-2024-08-18.md",
     "content/posts/agent-platform.md",
+    "content/posts/PH-daily-2024-08-18.md",
     "content/posts/未命名.md",
     "static/images/agent-platform-20240816153412887.webp",
     "static/images/agent-platform-20240819165748644.webp",
