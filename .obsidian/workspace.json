@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/wang-hui-wen.md",
+                "file": "content/posts/agent-platform.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/wang-hui-wen.md",
+                "file": "content/posts/agent-platform.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/wang-hui-wen.md",
+                "file": "content/posts/agent-platform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/wang-hui-wen.md"
+                "file": "content/posts/agent-platform.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   },
   "active": "9b32b03d410cf1e9",
   "lastOpenFiles": [
+    "content/posts/wang-hui-wen.md",
     "content/posts/my-favorite-prompt.md",
     "content/posts/agent-platform.md",
     "content/posts/PH-daily-2024-08-18.md",
@@ -175,7 +176,6 @@
     "content/posts/medical-beauty-aigc-agent.md",
     "content/posts/aipm-skills.md",
     "content/posts/linkedin-agent.md",
-    "content/posts/wang-hui-wen.md",
     "content/posts/vpn.md",
     "content/posts/Sora.md",
     "content/posts/share-rss.md",
