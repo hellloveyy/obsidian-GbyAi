@@ -36,6 +36,7 @@ author: hellloveyy
 - AutoGPT 最新版支持模块化设置
 - Comfyui_LLM_party 以 comfyui 的形式构建类似 dify 的 agent 工作流
 - ... 
+
 是不是眼花缭乱，但是其实这些平台的目的也是为了降低构建 agent 的门槛，但是自从这些平台初始推出至现在，我就一直在想这类产品的构建者用户群体到底是谁呢？
 
 是对 AI 有兴趣的普通人吗？
@@ -57,7 +58,7 @@ author: hellloveyy
 
 很早之前我就在想究竟这类产品的用户是谁？怎么才能让这类平台性质的产品更好用呢？能不能更 LUI？
 
-年初的某一天，想到“每个人都能自由便捷的构建 agent 才是最好的 agent platform“，在开车突然灵感一飘而过，年龄大了记忆力不好赶紧记下来。
+某一天，想到“每个人都能自由便捷的构建 agent 才是最好的 agent platform“，在开车突然灵感一飘而过，年龄大了记忆力不好赶紧记下来。
 
 {{< figure src="/images/agent-platform-20240816153412887.webp" caption="">}}
 （...忽略一些杂七杂八的玩意儿）
