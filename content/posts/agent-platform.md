@@ -34,7 +34,7 @@ author: hellloveyy
 
 最近 Product Hunt 上大火的 Wordware，其目的是降低 agent 构建门槛，让创建 agent 像 notion 文档一样简单，不需要懂 workflow、不需要懂代码即可完成复杂的 agent 构建。
 
-那先列举一下目前比较火的 agent 构建平台吧
+列举一下目前比较火的其他 agent 构建平台
 - GPTs
 - coze 以及类似大厂推出的平台（ModelScope，飞桨等）
 - dify
