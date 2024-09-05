@@ -25,6 +25,13 @@ author: hellloveyy
 
 > 对目前市面上构建 agent 的平台和工具的一些思考
 
+目前构建 agent 的产品形态越来越丰富了：
+- 编码（langchain，metagpt）
+- 拖拽工作流+插件（coze，dify，comfyui）
+- 画布（flowith，glif）
+- Prompt（gpts，glms）
+- 文档（wordware）
+
 最近 Product Hunt 上大火的 Wordware，其目的是降低 agent 构建门槛，让创建 agent 像 notion 文档一样简单，不需要懂 workflow、不需要懂代码即可完成复杂的 agent 构建。
 
 那先列举一下目前比较火的 agent 构建平台吧
