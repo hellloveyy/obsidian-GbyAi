@@ -825,3 +825,6 @@ QLoRA 引入了几项创新，以节省内存而不影响性能：
 
 {{< figure src="/images/paper-20240930195314259.webp" caption="">}}
 
+
+PS:以下为有关论文的 github 合集
+https://github.com/dair-ai/ML-Papers-Explained
