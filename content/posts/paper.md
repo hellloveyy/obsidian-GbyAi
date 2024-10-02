@@ -18,7 +18,7 @@ Cover:
 author: hellloveyy
 ---
 
-### Transformer：所有 LLM 的始祖，迈向 NLP 新时代的基础架构
+## Transformer：所有 LLM 的始祖，迈向 NLP 新时代的基础架构
 
 **论文名称：**《Attention is all you need》
 
@@ -40,7 +40,7 @@ Transformer 的特别之处在于它用了一种叫"注意力"的方法来理解
 
 {{< figure src="/images/31篇LLM经典论文-20240924142152862.webp" caption="">}}
 
-### GPT-1：autoregreesive Transformer 始祖
+## GPT-1：autoregreesive Transformer 始祖
 
 **论文名称**：《Improving language understanding by generative pre-training》
 
@@ -68,7 +68,7 @@ Transformer 的特别之处在于它用了一种叫"注意力"的方法来理解
 
 {{< figure src="/images/31篇LLM经典论文速读-20240924142316134.webp" caption="">}}
 
-### BERT：autoencoding Transformer 始祖，迈向 NLP fine-tuning 时代
+## BERT：autoencoding Transformer 始祖，迈向 NLP fine-tuning 时代
 
 **论文名称**：《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》
 
@@ -97,7 +97,7 @@ BERT就像是这样一个"超级学习机器"。它的特别之处在于:
 {{< figure src="/images/paper-20240927095429357.webp" caption="">}}
 
 
-### Transformer-XL：让 Transformer 可以吃更长的句子
+## Transformer-XL：让 Transformer 可以吃更长的句子
 
 **论文名称**：《Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context》
 
@@ -126,7 +126,7 @@ BERT就像是这样一个"超级学习机器"。它的特别之处在于:
 {{< figure src="/images/paper-20240927095818233.webp" caption="">}}
 
 
-### GPT-2：不想 fine-tune，我想要一个通用模型所有任务直接 zero-shot
+## GPT-2：不想 fine-tune，我想要一个通用模型所有任务直接 zero-shot
 
 **论文名称**：《Language models are unsupervised multitask learners》
 
@@ -150,7 +150,7 @@ BERT就像是这样一个"超级学习机器"。它的特别之处在于:
 
 {{< figure src="/images/paper-20240927100022470.webp" caption="">}}
 
-### ERNIE：把知识图谱一起整合在 BERT 上
+## ERNIE：把知识图谱一起整合在 BERT 上
 
 **论文名称**：《ERNIE: Enhanced Language Representation with Informative Entities》
 
@@ -173,7 +173,7 @@ BERT就像是这样一个"超级学习机器"。它的特别之处在于:
 {{< figure src="/images/paper-20240927104736482.webp" caption="">}}
 
 
-### DistilBERT：利用知识蒸馏训练更小的 BERT
+## DistilBERT：利用知识蒸馏训练更小的 BERT
 
 **论文名称**：《DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter》
 
@@ -203,7 +203,7 @@ BERT就像是这样一个"超级学习机器"。它的特别之处在于:
 
 {{< figure src="/images/paper-20240927114054393.webp" caption="">}}
 
-### T5：把 NLU 和 NLG 全部都当成 seq 2 seq 任务来训练吧
+## T5：把 NLU 和 NLG 全部都当成 seq 2 seq 任务来训练吧
 
 **论文名称**：《Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer》
 
@@ -233,7 +233,7 @@ BERT就像是这样一个"超级学习机器"。它的特别之处在于:
 
 {{< figure src="/images/paper-20240927114418611.webp" caption="">}}
 
-### Retrieval-Augmented Generation (RAG)：结合资料库检索，让 LLM 变得更强、回答讯息更正确
+## Retrieval-Augmented Generation (RAG)：结合资料库检索，让 LLM 变得更强、回答讯息更正确
 
 **论文名称**：《Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks》
 
@@ -268,7 +268,7 @@ RAG方法就像是把这两种方式结合起来:
 {{< figure src="/images/paper-20240927115021947.webp" caption="">}}
 
 
-### GPT-3：别再玩 fine-tune 了，in-context learning 和钱才是王道
+## GPT-3：别再玩 fine-tune 了，in-context learning 和钱才是王道
 
 **论文名称**：《Language Models are Few-Shot Learners》
 
@@ -294,7 +294,7 @@ RAG方法就像是把这两种方式结合起来:
 
 {{< figure src="/images/paper-20240927115515684.webp" caption="">}}
 
-### AutoPrompt：prompt 效果有时甚至比 fine-tune 好
+## AutoPrompt：prompt 效果有时甚至比 fine-tune 好
 
 **论文名称**：《AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts》
 
@@ -320,7 +320,7 @@ RAG方法就像是把这两种方式结合起来:
 
 {{< figure src="/images/paper-20240927142914595.webp" caption="">}}
 
-### Rotary Position Embedding：目前在 LLM 上最普遍使用的 embedding 方式
+## Rotary Position Embedding：目前在 LLM 上最普遍使用的 embedding 方式
 
 **论文名称**：《RoFormer: Enhanced Transformer with Rotary Position Embedding》
 
@@ -355,7 +355,7 @@ RAG方法就像是把这两种方式结合起来:
 
 {{< figure src="/images/paper-20240930192112310.webp" caption="">}}
 
-### LoRA：Fine-tune 不了整个 LLM，那 fine-tune 一点点就好
+## LoRA：Fine-tune 不了整个 LLM，那 fine-tune 一点点就好
 
 **论文名称**：《LoRA: Low-Rank Adaptation of Large Language Models》
 
@@ -386,7 +386,7 @@ RAG方法就像是把这两种方式结合起来:
 
 {{< figure src="/images/paper-20240930192240473.webp" caption="">}}
 
-### Codex：会写程式的 GPT
+## Codex：会写代码的 GPT
 
 **论文名称**：《Evaluating Large Language Models Trained on Code》
 
@@ -414,7 +414,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 
 {{< figure src="/images/paper-20240930192314207.webp" caption="">}}
 
-### FLAN：instruction-tuning（指令微调）让模型更了解你想干嘛
+## FLAN：instruction-tuning（指令微调）让模型更了解你想干嘛
 
 **论文名称**：Finetuned Language Models Are Zero-Shot Learners
 
@@ -453,7 +453,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 
 {{< figure src="/images/paper-20240930192503611.webp" caption="">}}
 
-### GLaM：用 MoE 架构通过专家混合模型高效扩展语言模型，设计 LLM 准确率更高、训练速度更快
+## GLaM：用 MoE 架构通过专家混合模型高效扩展语言模型，设计 LLM 准确率更高、训练速度更快
 
 **论文名称**：《GLaM：Efficient Scaling of Language Models with Mixture-of-Experts》
 
@@ -481,7 +481,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 **核心技术**：GLaM 模型架构
 
 {{< figure src="/images/paper-20240930192839711.webp" caption="">}}
-### WebGPT：可以上网查资料的 GPT-3 变得更强大
+## WebGPT：可以上网查资料的 GPT-3 变得更强大
 
 **论文名称**：《WebGPT：Browser-assisted question-answering with human feedback》
 
@@ -509,7 +509,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 
 {{< figure src="/images/paper-20240930193021911.webp" caption="">}}
 
-### Chain-of-Thought（CoT）：给答案要给详解，让 LLM 回答变得更有逻辑、更正确
+## Chain-of-Thought（CoT）：给答案要给详解，让 LLM 回答变得更有逻辑、更正确
 
 **论文名称**：《Chain-of-Thought Prompting Elicits Reasoning in Large Language Models》
 
@@ -535,7 +535,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 
 {{< figure src="/images/paper-20240930193242080.webp" caption="">}}
 
-### PaLM：训练 LLM 的大型系统
+## PaLM：训练 LLM 的大型系统
 
 **论文名称**：《PaLM: Scaling Language Modeling with Pathways》
 
@@ -563,7 +563,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 
 {{< figure src="/images/paper-20240930193454185.webp" caption="">}}
 
-### InstructGPT：ChatGPT 的前身，让人类来教 GPT-3 
+## InstructGPT：ChatGPT 的前身，让人类来教 GPT-3 
 
 **论文名称**：《Training language models to follow instructions with human feedback》
 
@@ -585,7 +585,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 
 {{< figure src="/images/paper-20240930193952532.webp" caption="">}}
 
-### Verify Step by Step：通过监督 LLM 的每一步，让 LLM 数学推理逻辑更强
+## Verify Step by Step：通过监督 LLM 的每一步，让 LLM 数学推理逻辑更强
 
 **论文名称**：《Let's Verify Step by Step》
 
@@ -612,7 +612,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 
 {{< figure src="/images/paper-20240930194303937.webp" caption="">}}
 
-### LLM.int8()：把 float 16/32 精度的 LLM 转成 int 8，GPU 就跑得动了
+## LLM.int8()：把 float 16/32 精度的 LLM 转成 int 8，GPU 就跑得动了
 
 **论文名称**：《LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale》
 
@@ -634,7 +634,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 
 {{< figure src="/images/paper-20240930194333842.webp" caption="">}}
 
-### ReAct：结合思维链提示和行动计划生成，防止 LLM 胡言乱语
+## ReAct：结合思维链提示和行动计划生成，防止 LLM 胡言乱语
 
 **论文名称**：《ReAct: Synergizing Reasoning and Acting in Language Models》
 
@@ -656,7 +656,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 
 {{< figure src="/images/paper-20240930194417254.webp" caption="">}}
 
-### Toolformer：会使用外部工具的 LLM
+## Toolformer：会使用外部工具的 LLM
 
 **论文名称**：《Toolformer: Language Models Can Teach Themselves to Use Tools》
 
@@ -678,7 +678,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 
 {{< figure src="/images/paper-20240930194539692.webp" caption="">}}
 
-### LLaMA：最有名的开源 LLM 第一代
+## LLaMA：最有名的开源 LLM 第一代
 
 **论文名称**：《LLaMA: Open and Efficient Foundation Language Models》
 
@@ -698,7 +698,7 @@ Codex就像是把成千上万的程序员的知识都装在了一个大脑里。
 
 {{< figure src="/images/paper-20240930194617795.webp" caption="">}}
 
-### GPT-4：目前世界上最强的 LLM（我觉得是sonnet）
+## GPT-4：目前世界上最强的 LLM（我觉得是sonnet）
 
 **论文名称**：《GPT-4 Technical Report》
 
@@ -718,7 +718,7 @@ GPT-4是一个基于 Transformer 的模型，预先训练来预测文件中的�
 
 {{< figure src="/images/paper-20240930194748283.webp" caption="">}}
 
-### QLoRA：quantization+Lora 让我一张显卡就可 fine-tune LLM
+## QLoRA：quantization+Lora 让我一张显卡就可 fine-tune LLM
 
 **论文名称**：《QLoRA: Efficient Finetuning of Quantized LLMs》
 
@@ -746,7 +746,7 @@ QLoRA 引入了几项创新，以节省内存而不影响性能：
 
 {{< figure src="/images/paper-20240930194832372.webp" caption="">}}
 
-### Phi-1：高品质的小数据胜过大数据和大模型
+## Phi-1：高品质的小数据胜过大数据和大模型
 
 **论文名称**：《Textbooks Are All You Need》
 
@@ -764,7 +764,7 @@ QLoRA 引入了几项创新，以节省内存而不影响性能：
 
 {{< figure src="/images/paper-20240930195103743.webp" caption="">}}
 
-### RLAIF：让社会化的 LLM 来社会化 LLM
+## RLAIF：让社会化的 LLM 来社会化 LLM
 
 **论文名称**：《RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback》
 
@@ -784,7 +784,7 @@ QLoRA 引入了几项创新，以节省内存而不影响性能：
 
 {{< figure src="/images/paper-20240930195126731.webp" caption="">}}
 
-### Superalignment：要人类能监督超级 AI，先从小 LLM 监督大 LLM 开始
+## Superalignment：要人类能监督超级 AI，先从小 LLM 监督大 LLM 开始
 
 **论文名称**：《Weak-to-Strong Generalization: Eliciting Strong Capabilities with Weak Supervision》
 
@@ -805,7 +805,7 @@ QLoRA 引入了几项创新，以节省内存而不影响性能：
 {{< figure src="/images/paper-20240930195214548.webp" caption="">}}
 
 
-### graphRAG：知识图谱检索增强
+## GraphRAG：知识图谱检索增强
 
 **论文名称**：《From Local to Global: A Graph RAG Approach to Query-Focused Summarization》
 
