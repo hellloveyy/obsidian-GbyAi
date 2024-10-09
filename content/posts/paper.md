@@ -18,6 +18,7 @@ Cover:
 author: hellloveyy
 ---
 
+{{< figure src="/images/paper-20241009174729501.webp" caption="">}}
 ## Transformer：所有 LLM 的始祖，迈向 NLP 新时代的基础架构
 
 **论文名称：**《Attention is all you need》
@@ -199,7 +200,7 @@ BERT就像是这样一个"超级学习机器"。它的特别之处在于:
 
 **链接论文**：https://arxiv.org/pdf/1910.01108.pdf
 
-**核心技术：**预训练语言模型。
+**核心技术：** 预训练语言模型。
 
 {{< figure src="/images/paper-20240927114054393.webp" caption="">}}
 
