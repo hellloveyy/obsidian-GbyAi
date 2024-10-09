@@ -14,7 +14,7 @@ series:
 lastmod: 
 lang: cn
 Cover:
-  image: /images/post-20240111195047056.webp
+  image: /images/paper-20241009174729501.webp
 author: hellloveyy
 ---
 
