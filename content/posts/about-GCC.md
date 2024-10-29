@@ -15,7 +15,7 @@ series:
 lastmod: 
 lang: cn
 Cover:
-  image: /images/post-20240111195047056.webp
+  image: /images/about-GCC-20241029160731594.webp
 author: hellloveyy
 ---
 
@@ -41,7 +41,7 @@ RPA 固定流程：类似影刀等。内部小 team 也一直在研究 RPA 的�
 **画个简图↓**
 {{< figure src="/images/about-GCC-20241029160731594.webp" caption="">}}
 
-借着 AutoGLM 这个产品逐步分析一下。
+借着 AutoGLM 这个产品逐步分析一下
 
 ### 输入
 
