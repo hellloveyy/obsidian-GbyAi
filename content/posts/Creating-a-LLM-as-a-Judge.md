@@ -15,7 +15,7 @@ series:
 lastmod: 
 lang: cn
 Cover:
-  image: /images/post-20240111195047056.webp
+  image: /images/hamel-LLM-as-a-Judge-20241031195252427.webp
 author: hellloveyy
 ---
 
