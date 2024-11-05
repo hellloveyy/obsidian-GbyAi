@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/search.md",
+                "file": "content/sponsor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "search"
+              "title": "sponsor"
             }
           }
         ]
@@ -176,8 +176,8 @@
   },
   "active": "9b32b03d410cf1e9",
   "lastOpenFiles": [
-    "content/about.md",
     "content/search.md",
+    "content/about.md",
     "content/posts/about-GCC.md",
     "static/images/my-favorite-prompt-20240814094901945.webp",
     "static/images/my-favorite-prompt-20240814094828852.webp",
