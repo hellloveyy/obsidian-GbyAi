@@ -18,8 +18,5 @@ Author:
 
 [![LINUX DO 新的理想型社区](https://linux.do/uploads/default/original/3X/b/4/b4fa45d8b03df61f5d011e173c0adf8497028b16.png)](https://linux.do/?source=gby.ai)
 
-{{< link-image 
-    src="https://linux.do/uploads/default/original/3X/b/4/b4fa45d8b03df61f5d011e173c0adf8497028b16.png"
-    href="https://linux.do/?source=gby.ai"
-    alt="LINUX DO 新的理想型社区" 
->}}
+
+{{< figure link="https://linux.do/?source=gby.ai" src="![/images/aipm-skills-20240319102243305.webp](https://linux.do/uploads/default/original/3X/b/4/b4fa45d8b03df61f5d011e173c0adf8497028b16.png)" caption="LINUX DO 新的理想型社区">}}
