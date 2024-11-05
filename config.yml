@@ -106,10 +106,10 @@ params:
     # 在列表默认显示的图片
     defaultImage: https://images.unsplash.com/photo-1594193316420-74562b321032?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGdyYWRpZW50JTIwYmxhY2t8ZW58MHwwfDB8fHwy
 
-  editPost:
-    URL: "https://github.com/hellloveyy/obsidian-GbyAi/tree/main/content"
-    Text: "指出问题" # edit text
-    appendFilePath: false # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/hellloveyy/obsidian-GbyAi/tree/main/content"
+  #   Text: "指出问题" # edit text
+  #   appendFilePath: false # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
