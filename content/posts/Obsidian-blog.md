@@ -36,7 +36,7 @@ author: hellloveyy & 老苗
 
 ## 二、相关工具汇总
 1. Hugo + Paper Mod 主题 （主题很多，自己点菜，完全满足做博客或者门户网站等）![](/images/Obsidian-blog-20240113002715608.webp)
-2. Obsidian 编辑器 + Github Publisher 插件 + Image Converter 插件
+2. Obsidian 编辑器 + Github Publisher 插件 (改名了现在叫 Enveloppe) + Image Converter 插件
 3. Github + Vercel （老搭档了，对比 GitHub page 自由度更高更方便）
 4. [dynadot.com](dynadot.com) （我用来购买 AI 域名，性价比较高而且可选中文界面&中文客服，服务相当周到。有一次出价点错了，跟客服说明之后，友好的帮我立刻取消了出价。我的推荐码： `kW6Z6i9D8e6I9T` 创建 Dynadot 帐户并在 48 小时内消费 9.99$ 会返还给你 5$，聊胜于无吧) ![](/images/Obsidian-blog-20240113230950211.webp)
 
