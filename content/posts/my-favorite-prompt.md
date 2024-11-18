@@ -16,7 +16,6 @@ Cover:
   image: /images/my-favorite-prompt-20240814094828852.webp
 author: hellloveyy
 ---
-
 {{< figure src="/images/my-favorite-prompt-20240814094901945.webp" caption="">}}
 
 ### 前言
@@ -24,6 +23,8 @@ author: hellloveyy
 但是结构化提示词对于我们日常使用的场景却是不够友好，日常使用需要的是一种随时可用，能够从我们的只言片语中领会并且协助我们深入的万能提示词。
 So~ 请食用吧，体验过的都说好。
 
+下面图片来自李继刚
+{{< figure src="/images/Pasted image 20241118173022.webp" caption="">}}
 
 ### 专家小组提示词
 
