@@ -14,9 +14,10 @@ series:
 lastmod: 
 lang: cn
 Cover:
-  image: /images/post-20240111195047056.webp
+  image: /images/c92995cc07afa65b272074e44c2f88cf(1).webp
 author: hellloveyy
 ---
+
 {{< figure src="/images/c92995cc07afa65b272074e44c2f88cf (1).webp" caption="">}}
 
 
