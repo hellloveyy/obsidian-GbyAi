@@ -43,7 +43,9 @@ author: hellloveyy
 - 文件夹内容
 {{< figure src="/images/comfyui-desktop-20241126171721972.webp" caption="">}}
 
-附带一下最近学习的一点小笔记（持续更新）
+> 附带一下最近学习的一点小笔记（持续更新）
+> 比较好的自学网站： https://www.comflowy.com/zh-CN/docs 
+> 比较好的课程可以去 B 站搜小王子
 
 ## 云安装
 
