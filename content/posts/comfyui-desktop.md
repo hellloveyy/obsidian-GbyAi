@@ -14,9 +14,13 @@ series:
 lastmod: 
 lang: cn
 Cover:
-  image: /images/c92995cc07afa65b272074e44c2f88cf(1).webp
+  image: /images/comfyui-desktop-20241126170651399.webp
 author: hellloveyy
 ---
+
+{{< figure src="/images/comfyui-desktop-20241126170651399.webp" caption="">}}
+
+
 今天收到了 comfyui 桌面版的下载邮件了，有兴趣的可以联系我传给你。
 
 申请地址： https://www.comfy.org/waitlist
