@@ -2,7 +2,7 @@
 date: 2024-11-26
 tags:
   - comfyui
-title: comfyui官方桌面版V1发布尝鲜
+title: comfyui官方桌面版V1尝鲜
 slug: comfyui-desktop
 share: true
 canonicalURL: 
