@@ -21,6 +21,7 @@ author: hellloveyy
 
 今天收到了 comfyui 桌面版的下载邮件了，有兴趣的可以联系我传给你。
 
+官方指南： https://comfyorg.notion.site/ComfyUI-Desktop-User-Guide-1146d73d365080a49058e8d629772f0a
 申请地址： https://www.comfy.org/waitlist
 
 {{< figure src="/images/screenshot-20241126-164341.webp" caption="">}}
@@ -146,3 +147,18 @@ author: hellloveyy
 {{< figure src="/images/comfyui-desktop-20241126174059936.webp" caption="">}}
 
 ## ComfyUI必备工作流和模型网站+如何解决图像颜色发灰问题
+
+1. Http://openart.ai 
+2. Http://liblib.ai 中国最大
+	- 可以在线生图，但是所有的节点都是内置好的，不能自己添加
+3. Http://civitai.com 全球最大最全
+4. Http://comfy.icu 调用平台工作流直接生成，并可以直接在线调整
+
+
+Ps: 
+1. 各个模型最好做文件夹分类，文件夹名称使用英文
+2. Checkpoint（pysss）, 可以直接展示文件夹，模型信息和预览图
+3. 如果图像发灰需要单独加载一个 vae 模型，不过目前最新的模型基本上都自带 vae 解码
+
+## 图生图基础工作流搭建+人物转绘+Controlnet 线稿应用
+
