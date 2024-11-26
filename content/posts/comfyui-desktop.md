@@ -79,14 +79,12 @@ author: hellloveyy
 ## 工作流
 
 - 基础
-
-![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1730019022582-1979ee2a-7d21-4510-ba4a-4eb0a9e7a12a.png)
+{{< figure src="/images/comfyui-desktop-20241126173931407.webp" caption="">}}
 
 - 最基础的文生图
+{{< figure src="/images/comfyui-desktop-20241126174001685.webp" caption="">}}
 
-![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1730019419071-5d99340e-352d-4588-a18a-3299826d1016.png)
-
-![](https://cdn.nlark.com/yuque/0/2024/jpeg/42422671/1730018445555-b6ba6a67-f586-4b2f-af5b-5f30cb4b17ba.jpeg)
+{{< figure src="/images/comfyui-desktop-20241126174042920.webp" caption="">}}
 
 ## 实用Tip&工具
 
@@ -143,6 +141,6 @@ author: hellloveyy
 - google translate：需要网络+魔法（不好用）
 - Clip 翻译高级：需要网络，可切换不同翻译API
 
-![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1732511488437-3f1003a7-e472-4961-988c-a4e31bba9886.png)
+{{< figure src="/images/comfyui-desktop-20241126174059936.webp" caption="">}}
 
 ## ComfyUI必备工作流和模型网站+如何解决图像颜色发灰问题
