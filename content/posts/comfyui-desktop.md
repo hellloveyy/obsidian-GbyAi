@@ -19,8 +19,9 @@ author: hellloveyy
 ---
 ## 客户端
 
-今天收到了 comfyui 桌面版的下载邮件了，有兴趣的可以联系我传给你。
+今天收到了 comfyui 桌面版的下载邮件了，突然发现人家开源了。
 
+GitHub 地址： https://github.com/Comfy-Org/desktop
 官方指南： https://comfyorg.notion.site/ComfyUI-Desktop-User-Guide-1146d73d365080a49058e8d629772f0a
 申请地址： https://www.comfy.org/waitlist
 
@@ -162,3 +163,14 @@ Ps:
 
 ## 图生图基础工作流搭建+人物转绘+Controlnet 线稿应用
 
+### 简单转绘
+1. 使用节点：**加载图像->vae 编码->复制 latent 批次**->K 采样器
+2. 人物转绘：正向关键词填写人物特征
+3. 降噪：控制重绘幅度，越高就跟原图越不像
+4. 改变图像大小：加载图像->**图像缩放节点**->vae 编码->复制 latent 批次->K 采样器
+5. 图像对比：节点 **rgthree** ，放在 vae 解码之后
+6. 生成图之后播放声音：节点 **Custom Scripts**
+### Controlnet
+1. 大模型什么版本就选择什么版本的 controlnet
+2. 使用节点：
+	{{< figure src="/images/comfyui-desktop-20241127140855963.webp" caption="">}}
