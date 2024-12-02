@@ -158,19 +158,57 @@ GitHub 地址： https://github.com/Comfy-Org/desktop
 
 Ps: 
 1. 各个模型最好做文件夹分类，文件夹名称使用英文
-2. Checkpoint（pysss）, 可以直接展示文件夹，模型信息和预览图
+2. Checkpoint 高级（pysss）, 可以直接展示文件夹，模型信息和预览图
 3. 如果图像发灰需要单独加载一个 vae 模型，不过目前最新的模型基本上都自带 vae 解码
 
 ## 图生图基础工作流搭建+人物转绘+Controlnet 线稿应用
 
 ### 简单转绘
 1. 使用节点：**加载图像->vae 编码->复制 latent 批次**->K 采样器
+	{{< figure src="/images/comfyui-desktop-20241127144531887.webp" caption="">}}
 2. 人物转绘：正向关键词填写人物特征
 3. 降噪：控制重绘幅度，越高就跟原图越不像
 4. 改变图像大小：加载图像->**图像缩放节点**->vae 编码->复制 latent 批次->K 采样器
-5. 图像对比：节点 **rgthree** ，放在 vae 解码之后
+5. 图像对比：节点 **rgthree** ，放在 vae 解码之后，替换预览即可
 6. 生成图之后播放声音：节点 **Custom Scripts**
 ### Controlnet
 1. 大模型什么版本就选择什么版本的 controlnet
 2. 使用节点：
-	{{< figure src="/images/comfyui-desktop-20241127140855963.webp" caption="">}}
+	{{< figure src="/images/comfyui-desktop-20241127160237006.webp" caption="">}}
+
+
+## 节点整合实现高效工作流
+### 节点整合最简文生图
+
+- Efficiency Node  
+
+{{< figure src="/images/comfyui-desktop-20241128151014455.webp" caption="">}}
+
+- Easy Use
+
+{{< figure src="/images/comfyui-desktop-20241128153701644.webp" caption="">}}
+
+- Segmentation 抠图和蒙版
+
+{{< figure src="/images/comfyui-desktop-20241128162313285.webp" caption="">}}
+
+
+## 实时渲染出图与 Turbo Lightning 和 LCM 模型讲解
+
+Turbo 模型特点：仅需要 4-8 步
+
+Lightning 参数：
+- 尺寸由模型版本决定 SDXL 1024*1024
+- 步数：4-8
+- CFG：1-2
+- 采样器调度器使用作者推荐
+
+LCM 特点：Low Compute Model
+- 对核心算法进行了深度优化的微调模型可以大幅度减少生成图的计算数量
+
+实时渲染节点:（效果一般）
+- Mixlab
+{{< figure src="/images/comfyui-desktop-20241129172812967.webp" caption="">}}
+
+## ComfyUI 加速出图（TensorRT）
+
