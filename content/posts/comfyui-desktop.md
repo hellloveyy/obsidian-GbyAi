@@ -193,7 +193,7 @@ Ps:
 {{< figure src="/images/comfyui-desktop-20241128162313285.webp" caption="">}}
 
 
-## 实时渲染出图与 Turbo Lightning 和 LCM 模型讲解
+## 实时渲染出图 Mixlab 与 Turbo、Lightning、LCM 模型
 
 Turbo 模型特点：仅需要 4-8 步
 
@@ -212,3 +212,18 @@ LCM 特点：Low Compute Model
 
 ## ComfyUI 加速出图（TensorRT）
 
+- 官方地址： https://github.com/comfyanonymous/ComfyUI_TensorRT
+- 不支持 controlnet 模型
+- 与 turbo、lightning、LCM 区别
+	- 以上三个是通过优化和更改模型架构来实现快速生图
+	- TensorRT 是不改变原有模型的架构，而是去优化显卡的计算效率，同时最大化的利用显卡的性能来提升出图速度
+
+- 包含三个节点
+	{{< figure src="/images/comfyui-desktop-20241202173258012.webp" caption="">}}
+	- Filename_prefix 是文件的名称尽量不要动！
+	- 训练好的模型在：根目录-output-tensorrt
+	- 模型命名规则（必须英文且没有空格）：模型种类_模型版本_模型简称_宽_高_batch size_静态/动态
+		- 例如：3D_XL_Rev_768_768_1_static
+
+- 连接方式: 
+	{{< figure src="/images/comfyui-desktop-20241202175430528.webp" caption="">}}
