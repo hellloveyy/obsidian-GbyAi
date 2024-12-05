@@ -39,6 +39,8 @@ author: hellloveyy
 
 ## 实操原理
 
+{{< figure src="/images/MCP-sqlite-example-and-fix-problem-20241205173542947.webp" caption="">}}
+
 1. MCP Server 的实现流程，官方文档已经写的很详细了：  
 	- 先通过 prompts / resources / tools 的描述信息，定义服务的能力；  
 	- 再通过 server.setRequestHandler 定义接到客户端请求后，执行怎样的逻辑，响应怎样的数据；  
