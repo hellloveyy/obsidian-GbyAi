@@ -35,7 +35,7 @@ author: hellloveyy
 
 3. 使用自己的 API key 
 - OneAPI 注册链接 [点击注册](https://oneapi.moththe.com/register?aff=uhvH) 
-- 自己的 OpenAI key 怎么获取可以参考这篇文章 [wildcard]({{< relref "wildcard.md" >}})
+- 自己的 OpenAI key 怎么获取可以参考这篇文章 [wildcard]({{< relref "{{< relref "wildcard.md" >}}" >}})
 - ...
 
 4. 你也可以自己部署一个自己的服务，套壳的项目很多，这里是一个部分的收集贴 https://github.com/bleedline/Awesome-gptlike-shellsite 其实还有更多比如 LibreChat，自己用能用好用就行啦。我用的是 [chatgpt-next-web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)
