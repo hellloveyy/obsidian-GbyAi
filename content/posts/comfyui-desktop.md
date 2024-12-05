@@ -95,7 +95,9 @@ GitHub 地址： https://github.com/Comfy-Org/desktop
 1. 操作按钮
 	- 修改语言：ACLTranslation-langualge
 	- 自动补全关键词：Text Autocomplete: enabled
-2. ComfyUI-Detail-Daemon 可以大幅增加 FLUX 生成图像的细节。
+	- Ctrl 选中，Ctrl+G 创建组，Ctrl+M 隐藏
+1. ComfyUI-Detail-Daemon 可以大幅增加 FLUX 生成图像的细节。
+2. Quick connection 方便的链接节点以及节点展示不遮挡
 3. 提示词自动化书写技巧
 - 基础
 	- 精准表达意图，长度最好保持在 75 个 token（或约 60 个字）以内
@@ -136,6 +138,8 @@ GitHub 地址： https://github.com/Comfy-Org/desktop
 反向提示词自动填写插件：one button prompt （auto negative）
 
 自动风格化提示词：sdxl_prompt_styler
+
+超强反推插件：JoyCaption2
 
 ## 中文提示词书写
 
@@ -227,3 +231,25 @@ LCM 特点：Low Compute Model
 
 - 连接方式: 
 	{{< figure src="/images/comfyui-desktop-20241202175430528.webp" caption="">}}
+
+
+## Flux
+
+
+
+## 局部裁剪、高效智能抠图与局部分割
+
+- 局部裁剪
+	{{< figure src="/images/comfyui-desktop-20241203171554449.webp" caption="">}}
+- 智能抠图：自动识别主体
+	- Inspyrenet：效果最好
+		- Threshold 范围 0-1，越高越精细，越干净，但是不要调到 1
+	- Segment anything：做局部语义分割
+		- {{< figure src="/images/comfyui-desktop-20241203200918662.webp" caption="">}}
+	- Birefnet-zho：适合扣多主体，需要配合对应的抠图模型
+	- Birefnet-hugo：适合单一主体
+	- Kjnote
+	- Comfyui Essentials
+	- layerdiffuse
+		- 生成图片的时候，会简化背景突出主体
+		- {{< figure src="/images/comfyui-desktop-20241203202414894.webp" caption="">}}
