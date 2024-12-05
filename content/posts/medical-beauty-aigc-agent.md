@@ -1057,5 +1057,3 @@ MECE 中文是「Mutually Exclusive Collectively Exhaustive （相互独立，�
 
 平时使用过比较好用的 json 编辑：谷歌插件里面还有好多常用功能 [FE前端助手](https://chromewebstore.google.com/detail/fehelper%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8B/pkgccpejnmalmdinmhkkfafefagiiiad?utm_source=ext_app_menu)
 {{< figure src="/images/medical-beauty-aigc-agent-20240219101719874.webp" caption="">}}
-
-相关文章： [llm-pk-tradition]({{< relref "{{< relref "llm-pk-tradition.md" >}}" >}})
