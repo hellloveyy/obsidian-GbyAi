@@ -24,11 +24,12 @@ author: hellloveyy
 So~ 请食用吧，体验过的都说好。
 
 下面图片来自李继刚
-![[Pasted image 20241118173022.webp]]
+
+{{< figure src="/images/Pasted image 20241118173022.webp" caption="">}}
 
 ### 专家小组提示词
 
-![[my-favorite-prompt-20241105200952667.webp]]
+{{< figure src="/images/my-favorite-prompt-20241105200952667.webp" caption="">}}
 
 - 多个角度帮你深挖问题
 - COT
@@ -116,7 +117,7 @@ I may also type one of the slash commands below. Respond by following the instru
 
 ### 私人教授提示词
 
-![[my-favorite-prompt-20241105200905707.webp]]
+{{< figure src="/images/my-favorite-prompt-20241105200905707.webp" caption="">}}
 
 - COT
 - 以提问的方式协助你明确问题并深度挖掘

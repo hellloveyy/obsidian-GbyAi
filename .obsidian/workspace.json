@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/MCP-sqlite-example-and-fix-problem.md",
+                "file": "content/posts/my-favorite-prompt.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MCP-sqlite-example-and-fix-problem"
+              "title": "my-favorite-prompt"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/MCP-sqlite-example-and-fix-problem.md"
+                "file": "content/posts/my-favorite-prompt.md"
               },
               "icon": "lucide-list",
-              "title": "MCP-sqlite-example-and-fix-problem 的大纲"
+              "title": "my-favorite-prompt 的大纲"
             }
           }
         ],
@@ -165,8 +165,16 @@
   },
   "active": "f058c9e16cc7a1c0",
   "lastOpenFiles": [
-    "content/posts/test.md",
+    "content/posts/comfyui-desktop.md",
     "content/posts/MCP-sqlite-example-and-fix-problem.md",
+    "static/images/screenshot-20241126-164341.webp",
+    "static/images/screenshot-20241126-164213.webp",
+    "static/images/screenshot-20241126-163358.webp",
+    "static/images/screenshot-20241126-160346.webp",
+    "static/images/screenshot-20241126-160323.webp",
+    "static/images/c92995cc07afa65b272074e44c2f88cf (1).webp",
+    "static/images/Pasted image 20241118173022.webp",
+    "content/posts/test.md",
     "content/posts/medical-beauty-agent-review.md",
     "未命名.canvas",
     "static/images/MCP-sqlite-example-and-fix-problem-20241205173542947.webp",
@@ -176,14 +184,6 @@
     "static/images/comfyui-desktop-20241127160237006.webp",
     "未命名.md",
     "static/images/MCP-sqlite-example-and-fix-problem-20241205170642302.webp",
-    "static/images/MCP-sqlite-example-and-fix-problem-20241205170635423.webp",
-    "static/images/MCP-sqlite-example-and-fix-problem-20241205170556225.webp",
-    "static/images/MCP-sqlite-example-and-fix-problem-20241205144747998.webp",
-    "content/posts/comfyui-desktop.md",
-    "static/images/comfyui-desktop-20241203202414894.webp",
-    "static/images/comfyui-desktop-20241203200918662.webp",
-    "static/images/comfyui-desktop-20241203200443048.webp",
-    "static/images/comfyui-desktop-20241203171554449.webp",
     "content/posts/my-favorite-prompt.md",
     "content/posts/2024-ai-innovators-conference.md",
     "content/posts/26-prompt-skills.md",
@@ -202,7 +202,6 @@
     "content/posts/trans-create-gpts-api.md",
     "content/posts/openai-translator.md",
     "content/posts/Creating-a-LLM-as-a-Judge.md",
-    "content/posts/comfy-ui.md",
     "static/images/王慧文清华产品课Allen修订版-20210104.pdf",
     "static/images/2401.03568-1-30.pdf",
     "AI PM Skills Tree.canvas",

@@ -25,25 +25,25 @@ GitHub 地址： https://github.com/Comfy-Org/desktop
 官方指南： https://comfyorg.notion.site/ComfyUI-Desktop-User-Guide-1146d73d365080a49058e8d629772f0a
 申请地址： https://www.comfy.org/waitlist
 
-![[screenshot-20241126-164341.webp]]
+{{< figure src="/images/screenshot-20241126-164341.webp" caption="">}}
 
 
 实际界面体验如下:
 
- ![[screenshot-20241126-160323.webp]]
+ {{< figure src="/images/screenshot-20241126-160323.webp" caption="">}}
 
-![[screenshot-20241126-160332.png]]
+{{< figure src="/images/screenshot-20241126-160332.png" caption="">}}
 
-![[screenshot-20241126-160346.webp]]
+{{< figure src="/images/screenshot-20241126-160346.webp" caption="">}}
 
 - 自行下载依赖以及包
-![[screenshot-20241126-160440.png]]
+{{< figure src="/images/screenshot-20241126-160440.png" caption="">}}
 
 - 默认文生图工作流
-![[screenshot-20241126-163358.webp]]
+{{< figure src="/images/screenshot-20241126-163358.webp" caption="">}}
 
 - 文件夹内容
-![[comfyui-desktop-20241126171721972.webp]]
+{{< figure src="/images/comfyui-desktop-20241126171721972.webp" caption="">}}
 
 > 附带一下最近学习的一点小笔记（持续更新）
 > 
@@ -83,12 +83,13 @@ GitHub 地址： https://github.com/Comfy-Org/desktop
 ## 工作流
 
 - 基础
-![[comfyui-desktop-20241126173931407.webp]]
+
+{{< figure src="/images/comfyui-desktop-20241126173931407.webp" caption="">}}
 
 - 最基础的文生图
-![[comfyui-desktop-20241126174001685.webp]]
+{{< figure src="/images/comfyui-desktop-20241126174001685.webp" caption="">}}
 
-![[comfyui-desktop-20241126174042920.webp]]
+{{< figure src="/images/comfyui-desktop-20241126174042920.webp" caption="">}}
 
 ## 实用Tip&工具
 
@@ -149,7 +150,7 @@ GitHub 地址： https://github.com/Comfy-Org/desktop
 - google translate：需要网络+魔法（不好用）
 - Clip 翻译高级：需要网络，可切换不同翻译API
 
-![[comfyui-desktop-20241126174059936.webp]]
+{{< figure src="/images/comfyui-desktop-20241126174059936.webp" caption="">}}
 
 ## ComfyUI必备工作流和模型网站+如何解决图像颜色发灰问题
 
@@ -169,7 +170,7 @@ Ps:
 
 ### 简单转绘
 1. 使用节点：**加载图像->vae 编码->复制 latent 批次**->K 采样器
-	![[comfyui-desktop-20241127144531887.webp]]
+	{{< figure src="/images/comfyui-desktop-20241127144531887.webp" caption="">}}
 2. 人物转绘：正向关键词填写人物特征
 3. 降噪：控制重绘幅度，越高就跟原图越不像
 4. 改变图像大小：加载图像->**图像缩放节点**->vae 编码->复制 latent 批次->K 采样器
@@ -178,7 +179,7 @@ Ps:
 ### Controlnet
 1. 大模型什么版本就选择什么版本的 controlnet
 2. 使用节点：
-	![[comfyui-desktop-20241127160237006.webp]]
+	{{< figure src="/images/comfyui-desktop-20241127160237006.webp" caption="">}}
 
 
 ## 节点整合实现高效工作流
@@ -186,15 +187,15 @@ Ps:
 
 - Efficiency Node  
 
-![[comfyui-desktop-20241128151014455.webp]]
+{{< figure src="/images/comfyui-desktop-20241128151014455.webp" caption="">}}
 
 - Easy Use
 
-![[comfyui-desktop-20241128153701644.webp]]
+{{< figure src="/images/comfyui-desktop-20241128153701644.webp" caption="">}}
 
 - Segmentation 抠图和蒙版
 
-![[comfyui-desktop-20241128162313285.webp]]
+{{< figure src="/images/comfyui-desktop-20241128162313285.webp" caption="">}}
 
 
 ## 实时渲染出图 Mixlab 与 Turbo、Lightning、LCM 模型
@@ -212,7 +213,7 @@ LCM 特点：Low Compute Model
 
 实时渲染节点:（效果一般）
 - Mixlab
-![[comfyui-desktop-20241129172812967.webp]]
+{{< figure src="/images/comfyui-desktop-20241129172812967.webp" caption="">}}
 
 ## ComfyUI 加速出图（TensorRT）
 
@@ -223,15 +224,14 @@ LCM 特点：Low Compute Model
 	- TensorRT 是不改变原有模型的架构，而是去优化显卡的计算效率，同时最大化的利用显卡的性能来提升出图速度
 
 - 包含三个节点
-	![[comfyui-desktop-20241202173258012.webp]]
+	{{< figure src="/images/comfyui-desktop-20241202173258012.webp" caption="">}}
 	- Filename_prefix 是文件的名称尽量不要动！
 	- 训练好的模型在：根目录-output-tensorrt
 	- 模型命名规则（必须英文且没有空格）：模型种类_模型版本_模型简称_宽_高_batch size_静态/动态
 		- 例如：3D_XL_Rev_768_768_1_static
 
 - 连接方式: 
-	![[comfyui-desktop-20241202175430528.webp]]
-
+	{{< figure src="/images/comfyui-desktop-20241202175430528.webp" caption="">}}
 
 ## Flux
 
@@ -240,16 +240,16 @@ LCM 特点：Low Compute Model
 ## 局部裁剪、高效智能抠图与局部分割
 
 - 局部裁剪
-	![[comfyui-desktop-20241203171554449.webp]]
+	{{< figure src="/images/comfyui-desktop-20241203171554449.webp" caption="">}}
 - 智能抠图：自动识别主体
 	- Inspyrenet：效果最好
 		- Threshold 范围 0-1，越高越精细，越干净，但是不要调到 1
 	- Segment anything：做局部语义分割
-		- ![[comfyui-desktop-20241203200918662.webp]]
+		- {{< figure src="/images/comfyui-desktop-20241203200918662.webp" caption="">}}
 	- Birefnet-zho：适合扣多主体，需要配合对应的抠图模型
 	- Birefnet-hugo：适合单一主体
 	- Kjnote
 	- Comfyui Essentials
 	- layerdiffuse
 		- 生成图片的时候，会简化背景突出主体
-		- ![[comfyui-desktop-20241203202414894.webp]]
+		- {{< figure src="/images/comfyui-desktop-20241203202414894.webp" caption="">}}
