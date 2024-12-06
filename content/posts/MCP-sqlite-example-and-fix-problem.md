@@ -70,4 +70,4 @@ author: hellloveyy
 3. 最后你的输入框旁边出现扳手图标 (🔧) 就代表 ok 了
 {{< figure src="/images/MCP-sqlite-example-and-fix-problem-20241205170642302.webp" caption="">}} 
 
-部分参考 issu： https://github.com/orgs/modelcontextprotocol/discussions/50
+部分参考 issues： https://github.com/orgs/modelcontextprotocol/discussions/50
