@@ -21,10 +21,15 @@ author: hellloveyy
 ### 前言
 自从各种 LLM 模型出现之后，提示词对于深挖 LLM 能力的一种方式，越来越多的被更多的人接受。各种结构化提示词例如 LangGPT 的推出，是帮助 LLM 能够更聪明执行任务和理解用户诉求的一种方式。
 但是结构化提示词对于我们日常使用的场景却是不够友好，日常使用需要的是一种随时可用，能够从我们的只言片语中领会并且协助我们深入的万能提示词。
-So~ 请食用吧，效果就不放了体验过的都说好。
+So~ 请食用吧，体验过的都说好。
 
+下面图片来自李继刚
+![[Pasted image 20241118173022.webp]]
 
 ### 专家小组提示词
+
+![[my-favorite-prompt-20241105200952667.webp]]
+
 - 多个角度帮你深挖问题
 - COT
 - 自动生成不同的专家角色
@@ -110,6 +115,9 @@ I may also type one of the slash commands below. Respond by following the instru
 
 
 ### 私人教授提示词
+
+![[my-favorite-prompt-20241105200905707.webp]]
+
 - COT
 - 以提问的方式协助你明确问题并深度挖掘
 ```
@@ -156,4 +164,6 @@ Rules:
 -Organize every output with 🧙🏾‍♂️ aligning on my request, followed by ${emoji} response
 
 -🧙🏾‍♂️, recommend save after each task is completed
+
+-response in chinese
 ```

@@ -4,6 +4,10 @@
     "repo": "obsidian-GbyAi",
     "branch": "main",
     "automaticallyMergePR": true,
+    "dryRun": {
+      "enable": false,
+      "folderName": "enveloppe"
+    },
     "tokenPath": "%configDir%/plugins/%pluginID%/env",
     "api": {
       "tiersForApi": "Github Free/Pro/Team (default)",
@@ -15,7 +19,7 @@
     },
     "otherRepo": [],
     "verifiedRepo": true,
-    "rateLimit": 4990
+    "rateLimit": 4994
   },
   "upload": {
     "behavior": "yaml",
@@ -29,6 +33,7 @@
     "replaceTitle": [],
     "replacePath": [],
     "autoclean": {
+      "includeAttachments": true,
       "enable": true,
       "excluded": [
         "content/about.md",
@@ -80,7 +85,8 @@
       "internal": false,
       "unshared": false,
       "wiki": true,
-      "slugify": true
+      "slugify": true,
+      "unlink": false
     }
   },
   "embed": {
@@ -91,6 +97,9 @@
     "folder": "static/images",
     "convertEmbedToLinks": "keep",
     "charConvert": "->",
+    "unHandledObsidianExt": [],
+    "sendSimpleLinks": true,
+    "forcePush": true,
     "forcePushAttachments": [],
     "useObsidianFolder": false
   },
@@ -103,12 +112,19 @@
       "enable": false,
       "links": "",
       "removePart": [],
-      "addCmd": false
+      "addCmd": false,
+      "transform": {
+        "toUri": true,
+        "slugify": "lower",
+        "applyRegex": []
+      }
     },
     "noticeError": true,
     "displayModalRepoEditing": false,
+    "setFrontmatterKey": "Set",
     "migrated": true,
     "dev": true
   },
-  "tabsID": "upload-configuration"
+  "tabsID": "github-configuration",
+  "tabsId": "github-configuration"
 }
