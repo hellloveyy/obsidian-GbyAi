@@ -233,10 +233,6 @@ LCM 特点：Low Compute Model
 - 连接方式: 
 	{{< figure src="/images/comfyui-desktop-20241202175430528.webp" caption="">}}
 
-## Flux
-
-
-
 ## 局部裁剪、高效智能抠图与局部分割
 
 - 局部裁剪
@@ -253,3 +249,179 @@ LCM 特点：Low Compute Model
 	- layerdiffuse
 		- 生成图片的时候，会简化背景突出主体
 		- {{< figure src="/images/comfyui-desktop-20241203202414894.webp" caption="">}}
+
+## 面部细节修复与更改
+
+1. 多出现任务在远景、广角的时候，尤其是1.5版本的模型
+2. 扩展：impact pack 节点：面部细化
+	1. ![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1734507255817-64ba7a12-828b-41ce-91c5-af9c1e49d0a1.png)
+	2. BBox检测连接 **检测加载器**（Segment anything 包里面的）
+		1. 通过指定模型以方格的方式识别局部修复区域
+		2. 面部修复使用 bbox/face_yolov8m.pt
+		3. 使用非segm不需要连接segm节点
+
+	3. SAM 连接 SAM加载器
+		1. 模型选择 sam_vit_h_4b8939.pth
+	4. 参数
+		1. 引导大小：重绘区域的像素 数值越高越精细，当画面存在多个面部或人物面部非常远的时候，可以适当调高这个值
+		2. 最大尺寸：当你的出图分辨率达到1024这个设置值的时候就不会开启重绘，如果想要超过1024也重绘就需要开启强制重绘
+		3. 降噪：越高重绘幅度越大，修复越好
+		4. 羽化：BBox是以方块的模式，羽化就是使这个方块的边角更柔和
+		5. BBox阈值：检测重绘精细度，数值越高检测越马虎；当图片有多面部并且人物很远时，数值可以调低一些增加辨识度
+		6. 膨胀值：给BBox的方块做圆角，会与环境更加融合
+		7. BBox剪裁系数：头像部分与环境的裁切大小，尽量不动，面部还是需要与环境有一些互动的
+		8. SAM检测提示：center以中心为基准
+		9. 关键词：可以修改面部的表情年龄等
+		10. cycle：修复轮数
+		11. impaint model：当你的大模型是专门的局部重绘模型再开启
+		12. noise_mask_feather:也是羽化的意思，默认不用处理
+
+## FLUX模型安装教学与测评分析
+
+1. [https://huggingface.co/black-forest-labs/FLUX.1-dev/tree/main](https://huggingface.co/black-forest-labs/FLUX.1-dev/tree/main)
+2. vae模型：ae.sft
+3. 原模型：放在unet flux1-dev.sft
+	1. PS: UNET加载器检测不到flux模型，只能检测到gguf模型文件，是因为 [ComfyUI-Flow-Control](https://github.com/krich-cto/ComfyUI-Flow-Control) 这个插件导致的，卸载之后重启就可以了，可以参照这个issue [https://github.com/city96/ComfyUI-GGUF/issues/179](https://github.com/city96/ComfyUI-GGUF/issues/179)
+	2. ![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735282617018-d3db0048-0bdc-4868-99dd-8a6a9de0e407.png)
+
+2. fp8版本生图速度更快，质量差异不大 [https://huggingface.co/Kijai/flux-fp8/tree/main](https://huggingface.co/Kijai/flux-fp8/tree/main)
+3. clip 模型：和SD3模型类似需要配合 [https://huggingface.co/stabilityai/stable-diffusion-3-medium/tree/main/text_encoders](https://huggingface.co/stabilityai/stable-diffusion-3-medium/tree/main/text_encoders)
+4. unet加载器
+	1. **原模型** weight_dtype 选择默认default
+	2. 双clip加载器 t5xxl_fp16 和 clip_l
+		1. ![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735028886172-be165cc5-d699-4c99-b863-6cbe1d515c0f.png)
+	3. fp8 需要对应的修改
+		1. ![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735028927962-d3ab5420-7e12-4965-847f-bdeac3f870fd.png)
+5. 宽高比优化：随意尺寸都支持；
+6. 无需负面提示词与CFG scale，尽可能把你的关键词写的非常准确
+
+## FLUX文生图 图生图 局部重绘 高清放大 lora全生态讲解
+
+#### 1.搭建flux生态所需：模型、vae、clip、lora、controlnet、节点包等
+
+1. 模型、vae等参考以上，负面clip不需要（如果要链接节点就建一个空节点）
+2. NF4小知识：Next-Gen Flux Model，在尽可能保证细节的基础上，最大程度还原原模型的效果，速度提升4倍，显存要求降低4倍；整合了clip和vae，需要放在checkpoints；要单独的加载器
+3. GGUF：GPT-Generated Unified Format，大语言模型训练LLama.cpp框架中的一种文件格式，可以在任何大模型统一框架的基础上简化模型的处理；需要放在checkpoints；要单独的加载器![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735038628632-1c184d02-a04e-414e-a52a-4a067708c163.png)
+4. 扩展节点包：[https://github.com/XLabs-AI/x-flux-comfyui](https://github.com/XLabs-AI/x-flux-comfyui) 放入custom nodes
+5. lora模型：[https://huggingface.co/XLabs-AI/flux-lora-collection/tree/main](https://huggingface.co/XLabs-AI/flux-lora-collection/tree/main)
+
+1. 带有comfy_converted 代表可以被普通的lora加载器识别，可以直接放入loras 目录
+2. 另外的需要放入 models/xlabs/loras 文件夹才能被扩展节点包识别
+3. 加载节点：load flux lora 或者普通的 load lora，位置放在unet模型和k采样器之间![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735038931978-e36a0806-0923-425d-9e8d-265492d5be05.png)
+
+6. controlnet:[https://huggingface.co/XLabs-AI/flux-controlnet-collections/tree/main](https://huggingface.co/XLabs-AI/flux-controlnet-collections/tree/main)
+
+1. 放入 models/xlabs/controlnets![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735031501008-6a5f4d7e-b876-4be3-b649-6b3db574904f.png)
+
+7. 在liblib上找flux：筛选基础底模F.1
+
+#### 2.flux 文生图与最佳采样器
+
+1. 单独的k采样器： flux sampler parameter，在comfyui essentials 扩展里面
+
+1. 官方推荐：euler+simple
+2. 小王子推荐：euler+Beta
+3. 可尝试：uni_pc_bh2 + simple 或者 ipdmn + simple![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735033408819-f6065706-7233-44d0-85ad-04365dd9c26d.png)
+4. guidance：是CFG 里面的G，控制提示词的相关性；
+
+1. 官方推荐3.5，建议2-5之间
+2. =2的时候艺术发挥空间更大艺术效果更浓，>5的时候画面对比度会强烈
+3. <3画面会偏写实，>3画面会偏动漫，如果目的要做写实建议2-3，如果目的要做非写实建议3-4.5
+
+5. 生图技巧：先拿GGUF跑到满意，然后拿FP16dev用相同的参数生成更细节的图，之后在做高清化处理
+
+2. 与基础的区别
+
+1. ![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735033522169-0cd12235-fcc4-4a70-86c3-0c1ae312b144.png)
+
+#### 3.flux 高清放大
+
+1. 节点：Ultimate SD upscale
+
+1. SD放大
+
+- 放大模型：使用放大模型加载器 4x-UltraSharp
+- ![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735202968423-e24d7d00-062b-4687-99a6-4405f111db68.png)
+
+2. SD不放大：没有放大模型连接加载，用来做二次采样
+
+2. _**记住CFGScale =1，当使用flux模型的时候不得不调整CFGScale 就调整为1**_
+3. 采样器、调度器 Euler normal
+4. 降噪：不要太高，太高就和图片不像了，建议改到0.1-0.2之间；如果需要放大的同时增加更多的细节，调整到0.35-0.5；
+5. 原理：把整张图片根据根据你的分块宽度和高度，切片为不同数量的方格图，逐一去渲染
+6. 模式类型：
+
+1. 直线：按照从左到右，从上到下的顺序逐步渲染
+2. chess：按照不规则交叉渲染
+3. none：直接放大，不做分块处理，和 **图像通过模型放大**节点效果一样
+
+7. 分块宽度、高度：
+
+1. 原图1024，放大到2048分块在512，放大到4096分块在1024
+
+8. 模糊、分块分区：尽可能往高处设置，保证8的倍数，64等
+9. 接缝修复模式：如果出来的图片没有缝隙，不建议打开，会再次重绘一边图像有可能会导致变化
+
+1. none：不会给图片带来任何影响
+2. half tile：修复效果最好，但是生图速度最久
+3. 变化的强度取决于：接缝修复降噪、接缝修复宽度、接缝修复模糊、接缝修复分区
+
+#### 4.flux 图生图
+
+1. 增加加载图像和vae编码即可![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735040145268-902fc0eb-fbb4-4ce9-b0bd-a6a59d103e37.png)
+2. 图生图最关键的参数：提示词和 _**denoice**_（重绘幅度，数值越低和原图越相似，数值越高和原图越不同）
+
+#### 5.flux 局部重绘
+
+1. 节点：differential diffusion（差异扩散） 可以逐步改善图像质量并生成细节更丰富；链接到模型和模型之间
+2. 节点：gaussian blur mask（高斯模糊）专门优化蒙版边缘衔接的节点；链接到原始图像的遮罩
+
+1. 大小/sigma，数值越高蒙版越模糊
+
+3. 节点：InpaintModelConditioning（内补模型条件）内置vae编码，所以一开始图像的vae编码可以去掉；
+4. ![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735040914464-d0cef1b5-e086-42b3-9272-69386566e883.png)
+5. 使用：右键加载的图像->在遮罩编辑器中打开，选择要修改的区域，然后调整denoice
+
+1. 可以配合 **G-dino语义分割** 自动局部重绘，无需手动描选遮罩区域。
+
+#### 6.flux controlnet
+
+1. 节点：load Flux ControlNet，加载模型
+2. 节点：在aux扩展包里面，包括：canny edge、Midas Depth map、Hed soft edge lines![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735041620821-a0da02e3-15a8-4e60-9bc5-dfe5498173e3.png)
+3. 节点：Apply flux ControlNet
+4. 节点：Xlabs sampler
+5. ![](https://cdn.nlark.com/yuque/0/2024/png/42422671/1735041802306-47674b8a-0417-43ce-9cbb-8c8567d94f6f.png)
+6. 以上为Xlabs的controlnet，还有一个Union，但是效果很差 [https://huggingface.co/InstantX/FLUX.1-dev-Controlnet-Union](https://huggingface.co/InstantX/FLUX.1-dev-Controlnet-Union)
+
+## 4K高清放大画面细节修复扩展详解
+
+1. 之前提到过 **高清修复** 和 **flux 高清放大**
+2. 节点：**图像通过模型放大**
+
+1. 放大模型加载器：4x-UltraSharp；推荐这个比较真实，其他会出现磨皮过重的效果
+
+3. 如果不想放大4倍
+
+1. 扩展：comfyroll Studio 节点：放大图像
+
+4. 更好的放大节点：SD Ultimate upscale 详细说明放在 **flux 高清放大**
+
+
+
+## ComfyUI 更新
+
+这个更新主要是让用户在 ComfyUI 里对 LoRA 和模型权重进行更灵活的控制，包括利用「蒙版（Masking）」和「时间表（Scheduling）」的方式对它们的影响区域与影响时机进行细分与调控。
+
+简单来说： LoRA 和模型权重的「局部应用」： 以前要对整个图像应用 LoRA 或模型风格，现在可以通过对特定区域（使用蒙版）来局部应用这些权重。这样你可以让一部分图像使用一个风格模型，另一部分使用另一个 LoRA 权重。 
+
+LoRA 和模型权重的「分步调节」： 你可以根据生成过程中的不同步骤（扩散的不同时间点）对权重进行调整。比如在早期步骤保持模型原样，中期慢慢引入 LoRA 的风格，后期再加大 LoRA 权重，让最终图像细节和风格更符合你的预期。 
+
+简化节点操作： 更新中提供了专门的节点来创建和组合这些「挂钩（Hooks）」和「条件（Conditioning）」，让使用者能更轻松地实现复合式的蒙版与时序控制，而不再需要复杂的绕线和额外节点。 
+
+总结新能力： 
+- 蒙版功能：能将 LoRA 或模型风格只作用在特定图像区域上，轻松实现图像局部风格化。
+- 时间轴调度（Scheduling）：可在扩散采样的不同阶段动态调整 LoRA 或模型权重，让图像在生成过程中逐步过渡到所需风格。
+- 条件节点扩展：新的节点能轻松组合、分配、叠加和定制 Conditioning，既可手动又可自动为不同部分或不同阶段添加 LoRA 和模型权重。
+
+通过这次更新，你的模型控制会更加精细化，可以同时在空间与时间两个维度对风格和特性进行动态调节，从而获得更灵活、更高级的生成结果。
+
