@@ -20,6 +20,8 @@ Cover:
   image: /images/deepseek-r1-20250206203222984.webp
 author: hellloveyy
 ---
+{{< figure src="/images/deepseek-r1-20250206203222984.webp" caption="">}}
+
 ![deepseek-r1-20250206203222984.webp](deepseek-r1-20250206203222984.webp)
 
 近期，国内大模型公司DeepSeek发布的V3和R1模型引发了广泛关注，甚至被部分媒体称为“国运级创新”。我自己也深度体验了一下确实能力近似追平了 o1，阅读了不少文章，简单说说对产品上的影响，做个记录
