@@ -17,10 +17,9 @@ series:
 lastmod: 
 lang: cn
 Cover:
-  image: /images/deepseek-r1-20250206203222984.webp
+  image: /content/posts/deepseek-r1-20250206203222984.webp
 author: hellloveyy
 ---
-{{< figure src="/images/deepseek-r1-20250206203222984.webp" caption="">}}
 
 ![deepseek-r1-20250206203222984.webp](deepseek-r1-20250206203222984.webp)
 
