@@ -114,4 +114,11 @@ DeepSeek的核心突破在于**提升大模型的效率**，通过架构优化�
 3. **跟踪开源生态**：DeepSeek-R1的开源版本可作为低成本试错工具，快速验证产品需求。
 4. Get your hands dirty
 
->  非常建议阅读的深度好文： https://zhuanlan.zhihu.com/p/21208287743
+
+### 五、聚合一波了解 deepseek 最好的文章、视频、播客
+1. 官方 GitHub https://github.com/deepseek-ai/DeepSeek-R1
+2. 官方推荐的已经集成 DeepSeek 的应用 https://github.com/deepseek-ai/awesome-deepseek-integration/blob/main/README_cn.md
+3. 专业研发人员视角的解析文章： https://zhuanlan.zhihu.com/p/21208287743?utm_medium=social&utm_psn=1870743174068170752&utm_source=wechat_session
+4. 语音播客逐字解读 DeepSeek 论文 https://www.xiaoyuzhoufm.com/episode/67a1b697247d51713c868367?s=eyJ1IjoiNjU4YjQ0MWZlZGNlNjcxMDRhN2E0MDU0In0%3D
+5. 非技术人员解读（视频+文本）（非常推荐非常推荐） https://mp.weixin.qq.com/s/_XGBipbywCOtcKu13QDW5Q
+6. 非技术人员解读简化版： https://mp.weixin.qq.com/s/fdRnD0kHR7ixrMy4uZYFoA
