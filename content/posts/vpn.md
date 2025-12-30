@@ -44,7 +44,7 @@ author: hellloveyy
 🔖 优惠码：`LXY`
 注册链接： https://xn--9kqz23b19z.com/#/register?code=THKn7rZy
 
-![vpn-20251230105653021.webp](vpn-20251230105653021.webp)
+![vpn-20251230105653021.webp](/images/vpn-20251230105653021.webp)
 这个是所有速度测试 https://xn--9kqz23b19z.com/#/docs/8
 
 ## 速子云
