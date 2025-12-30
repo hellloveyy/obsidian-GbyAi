@@ -6,13 +6,13 @@ tags:
 title: 自用稳定快速ChatGPT VPN
 slug: vpn
 share: true
-canonicalURL: 
-keywords: 
-description: 
+canonicalURL:
+keywords:
+description:
 series:
   - Tools
   - ChatGPT
-lastmod: 
+lastmod:
 lang: cn
 Cover:
   image: /images/vpn-20240118171752946.webp
@@ -32,6 +32,20 @@ author: hellloveyy
 23 年随着 OpenAI ChatGPT 的爆火，到现在工作已经越来越离不开 GPT，相信不少人也有这种感觉，但是网络环境要求却是在逐步增加，唉。
 
 推荐两个我一直在用，速度稳定，账号一直是没问题的两个服务商。
+
+## 良心云
+### 最新！便宜量大管饱！而且无压力 OpenAI、Claude、Gemini
+
+6 块钱 1000 G 这不随便用，而且速度是真的可以，比速子云稍差但是足够用了，至少我看海外媒体速度还可以。
+
+7 折邀请码
+活动日期：12月31日 - 1月1日  
+💰 优惠力度：全场7折 **（2元套餐除外）**  
+🔖 优惠码：`LXY`
+注册链接： https://xn--9kqz23b19z.com/#/register?code=THKn7rZy
+
+![vpn-20251230105653021.webp](vpn-20251230105653021.webp)
+这个是所有速度测试 https://xn--9kqz23b19z.com/#/docs/8
 
 ## 速子云
 
